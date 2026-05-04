@@ -3,4 +3,4 @@
 set -o errexit
 
 pip install -r requirements.txt
-python -c "import nltk; nltk.download('punkt_tab'); nltk.download('stopwords')"
+python -m nltk.downloader -d ./nltk_data punkt punkt_tab stopwords

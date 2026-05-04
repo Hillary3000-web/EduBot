@@ -1,6 +1,11 @@
 import re
 import random
+import os
 import nltk
+
+# Explicitly tell NLTK to look for data in the local project folder (for Render)
+nltk.data.path.append(os.path.abspath('./nltk_data'))
+
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
